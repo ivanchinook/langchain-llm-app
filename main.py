@@ -9,4 +9,4 @@ user_pet_color=st.sidebar.text_area(label=f"What color is your {user_animal_type
 
 if user_pet_color:
     response = lch.generate_pet_name(user_animal_type, user_pet_color)
-    st.text(response)
+    st.text(response['pet_name'])
